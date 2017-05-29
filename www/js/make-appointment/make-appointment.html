@@ -1,0 +1,23 @@
+<ion-view view-title="DocApp">
+    <ion-content class="makeAppointmentBody">
+        <div class="headerBellowNavbar">Please choose your doctor</div>
+        <div class="bar-light bar-subheader filterDocs">
+            <input type="search" placeholder="Filter By Specialty..." ng-model="search">
+            <button ng-if="search.length" class="button button-icon ion-android-close input-button" ng-click="clearSearch()"></button>
+        </div>
+        <!--<div class="button button-positive appointmentDateButton ion-ios-calendar-outline" ng-click="openDatePicker()"></div>-->
+        <div>
+            <ion-list class="docList ">
+                <div ng-repeat="item in docList | searchContacts:search ">
+                    <ion-item class="item-stable item-icon-right" href="#/app/selectedDoctor/{{item.DOCTOR_ID}}">
+                        <h3><b>{{item.NAME}} - {{item.SPECIALTY}} </b></h3>
+                        <h4><b>{{item.DISTRICT}} - {{item.ADDRESS1}} {{item.ADDRESS2}} </b></h4>
+                    </ion-item>
+                </div>
+            </ion-list>
+        </div>
+        <!--
+        <div class="button button-positive appointmentSubmitButton " ng-click=" ">Submit</div>-->
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view view-title="DocApp">
+    <ion-content class="makeAppointmentBody">
+        <div class="headerBellowNavbar">Please choose the time</div>
+        <div class="bar-light bar-subheader filterDocs">
+            <input type="search" placeholder="Filter Agenda by Start Time..." ng-model="search">
+            <button ng-if="search.length" class="button button-icon ion-android-close input-button" ng-click="clearSearch()"></button>
+        </div>
+        <!--<div class="button button-positive appointmentDateButton ion-ios-calendar-outline" ng-click="openDatePicker()"></div>-->
+        <div>
+            <ion-list class="docList ">
+                <div ng-repeat="item in agenda | searchAgenda:search ">
+                    <div class="item-stable item-icon-right card" data="{{item.SCHEDULE_ID}}" ng-click="markAgenda(item.SCHEDULE_ID)">
+                        <h5>DATE: {{item.DATE}} <b>start {{item.START_TIME}} - ends: {{item.END_TIME}} </b></h5>
+                    </div>
+                </div>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

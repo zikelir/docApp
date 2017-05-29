@@ -1,0 +1,15 @@
+<ion-view view-title="DocApp">
+    <ion-content class="makeAppointmentBody">
+        <div class="headerBellowNavbar">Here are your appointments</div>
+        <ion-list class="docList ">
+            <div ng-repeat="item in appointmentList | searchContacts:search ">
+                <ion-item class="item-stable item-icon-right">
+                    <h3>Doctor: {{item.DOCTOR}}</h3>
+                    <h4>Address: {{item.DISTRICT}} - {{item.ADDRESS1}} {{item.ADDRESS2}}</h4>
+                    <h4><b> Date: {{item.DATE}} - Start time: {{item.START_TIME}}  </b></h4>
+                </ion-item>
+            </div>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

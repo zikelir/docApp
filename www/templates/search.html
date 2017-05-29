@@ -1,0 +1,26 @@
+<ion-view view-title="Welcome">
+    <ion-content>
+        <div class="headerBellowNavbar">Welcome to the My</div>
+        <!--<div class="myPhoto"></div>-->
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img src="/img/kiritoface.png">
+                <h2>{{user.name}}</h2>
+                <p>{{today}}</p>
+            </div>
+
+            <div class="item item-body">
+                <!--<img class="full-image" src="/img/kiritoface.png">-->
+                <p>
+                    {{user.personalInfo}}
+                </p>
+                <p>
+                    <a href="#" class="subdued">{{user.userInfoLikes}} likes</a>
+                    <a href="#" class="subdued">{{user.userInfoComments}} comments</a>
+                </p>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

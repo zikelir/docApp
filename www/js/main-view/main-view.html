@@ -1,0 +1,33 @@
+<ion-view view-title="DocApp">
+    <ion-content>
+        <div class="headerBellowNavbar">Welcome to the DocApp</div>
+        <!--<div class="myPhoto"></div>-->
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img src="img/john-smith.jpg">
+                <h2>Welcome {{user.name}}!</h2>
+                <p>{{today}}</p>
+            </div>
+
+            <div class="item item-body">
+                <!--<img class="full-image" src="/img/kiritoface.png">-->
+                <p>
+                    Age: {{user.personalInfo.age}}
+                </p>
+                <p>
+                    Address: {{user.personalInfo.address}}
+                </p>
+                <p>
+                    Phone: {{user.personalInfo.phone}}
+                </p>
+
+                <!--<p>
+                    <a href="#" class="subdued">{{user.userInfoLikes}} likes</a>
+                    <a href="#" class="subdued">{{user.userInfoComments}} comments</a>
+                </p>-->
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <script src="lib/bluebird.min.js"></script>
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic.cloud.min.js"></script>
+    <script src="lib/ionic-datepicker/dist/ionic-datepicker.bundle.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/login/login.controller.js"></script>
+    <script src="js/login/login.service.js"></script>
+    <script src="js/login/login.js"></script>
+    <script src="js/main-view/main-view.controller.js"></script>
+    <script src="js/main-view/main-view.service.js"></script>
+    <script src="js/main-view/main-view.js"></script>
+    <script src="js/make-appointment/make-appointment.controller.js"></script>
+    <script src="js/make-appointment/make-appointment.service.js"></script>
+    <script src="js/make-appointment/make-appointment.js"></script>
+    <script src="js/selected-doctor/selected-doctor.controller.js"></script>
+    <script src="js/selected-doctor/selected-doctor.service.js"></script>
+    <script src="js/selected-doctor/selected-doctor.js"></script>
+    <script src="js/view-appointment/view-appointment.controller.js"></script>
+    <script src="js/view-appointment/view-appointment.service.js"></script>
+    <script src="js/view-appointment/view-appointment.js"></script>
+</head>
+
+<body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+</body>
+
+</html>
